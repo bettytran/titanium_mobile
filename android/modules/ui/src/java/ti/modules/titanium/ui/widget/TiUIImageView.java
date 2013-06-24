@@ -39,6 +39,7 @@ import org.appcelerator.titanium.view.TiUIView;
 import ti.modules.titanium.filesystem.FileProxy;
 import ti.modules.titanium.ui.ImageViewProxy;
 import ti.modules.titanium.ui.widget.TiImageView.OnSizeChangeListener;
+import ti.modules.titanium.ui.ScrollViewProxy;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;

@@ -82,6 +82,7 @@ public class TiImageView extends ViewGroup
 			}
 		}
 
+
 		@Override
 		protected void onSizeChanged(int w, int h, int oldw, int oldh) 
 		{
@@ -111,7 +112,9 @@ public class TiImageView extends ViewGroup
 		}
 	}
 
-	public TiImageView(Context context) {
+
+	public TiImageView(Context context)
+	{
 		super(context);
 
 		final TiImageView me = this;
@@ -131,6 +134,7 @@ public class TiImageView extends ViewGroup
 
 		imageView = new NoLayoutImageView(context);
 		addView(imageView);
+
 		setCanScaleImage(false);
 
 		gestureDetector = new GestureDetector(getContext(),
@@ -218,6 +222,7 @@ public class TiImageView extends ViewGroup
 		this.enableZoomControls = enableZoomControls;
 	}
 
+
 	public void setImageDrawable(Drawable d) {
 		setImageDrawable(d, true);
 	}
@@ -245,7 +250,8 @@ public class TiImageView extends ViewGroup
 		setCanScaleImage(canScaleImage); // Apply scale
 	}
 
-	public Drawable getImageDrawable() {
+	public Drawable getImageDrawable()
+	{
 		return imageView.getDrawable();
 	}
 
@@ -346,6 +352,7 @@ public class TiImageView extends ViewGroup
 
 			float vwidth = getWidth() - getPaddingLeft() - getPaddingRight();
 			float vheight = getHeight() - getPaddingTop() - getPaddingBottom();
+
 
 			float widthScale = Math.min(vwidth/dwidth, 1.0f);
 			float heightScale = Math.min(vheight / dheight, 1.0f);
